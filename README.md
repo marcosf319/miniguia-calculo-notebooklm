@@ -1,36 +1,46 @@
-# Miniguia de Estudos: Fundamentos de Derivadas e Integrais com NotebookLM
+# Miniguia de Estudos: Cálculo Diferencial e Integral Aplicado à Computação com NotebookLM
 
 ## 🎯 Contexto e Objetivos
 
-Este repositório foi desenvolvido como parte de um desafio de projeto na plataforma **DIO (Digital Innovation One)**. O objetivo é utilizar o **Google NotebookLM** como uma ferramenta de aprendizagem ativa, aplicando Inteligência Artificial para organizar, sintetizar e fixar conceitos complexos de disciplinas universitárias de exatas.
+Este repositório foi desenvolvido como parte de um desafio de projeto na plataforma **IE / DIO (Digital Innovation One)**. O objetivo é explorar o uso do **Google NotebookLM** como uma ferramenta de aprendizagem ativa, utilizando Inteligência Artificial para organizar, sintetizar e fixar conceitos complexos que unem a matemática pura à ciência da computação.
 
-### Tema Escolhido: Cálculo Diferencial e Integral (Derivadas e Integrais)
-A escolha do tema se justifica pela sua importância central em cursos de tecnologia, computação e engenharia. O objetivo deste caderno temático é consolidar a interpretação geométrica e matemática de derivadas (taxas de variação) e integrais (acúmulo e área sob a curva), além de mapear suas aplicações práticas em algoritmos e otimização de sistemas.
+### Tema Escolhido: Cálculo Diferencial e Integral e suas Aplicações Tecnológicas
+A escolha do tema baseia-se na necessidade de compreender a base matemática abstrata por trás de algoritmos modernos. O objetivo deste caderno temático é consolidar os conceitos de limites, derivadas (taxas de variação) e integrais (acúmulo), mapeando como essas ferramentas gerenciam o aprendizado de redes neurais (*backpropagation*), a detecção de bordas em visão computacional, simulações científicas e a análise de complexidade de algoritmos.
 
 ---
 
 ## 📚 Curadoria de Fontes
 
-Para alimentar o NotebookLM com base acadêmica sólida, foram selecionadas as seguintes fontes abertas e materiais didáticos:
+Para alimentar o NotebookLM com rigor acadêmico e técnico, foram selecionadas e carregadas as seguintes 13 fontes (manuais, páginas da web, apostilas e teses):
 
-1. **Notas de Aula de Cálculo I - Limites e Derivadas** (PDF Acadêmico) - Foco na definição formal de limite e na introdução geométrica da derivada como a reta tangente.
-2. **O Teorema Fundamental do Cálculo e Integração** (Artigo/Capítulo de Livro Aberto) - Exploração da relação inversa entre a diferenciação e a integração.
-3. **Aplicações de Cálculo na Computação** (Whitepaper/Artigo) - Exemplos práticos de como derivadas são usadas em Machine Learning (Gradient Descent) e integrais no processamento de sinais digitais.
+1. **Análise de Complexidade de Algoritmos 1.1** (PDF - CIn UFPE)
+2. **A Máquina Analítica e a pré-história dos computadores** (Página da Web - Mentalidades Matemáticas)
+3. **A base matemática da Engenharia de Software** (Página da Web - Blog Universo Ateneu)
+4. **A essência do cálculo diferencial e integral da Engenharia da Computação** (Página da Web)
+5. **Aplicações científicas e tecnológicas da derivada e integral usando simulação computacional** (PDF - Research, Society and Development)
+6. **Apostila de Cálculo I** (PDF - IME/Unicamp)
+7. **Aula 11 Expositiva: Integrais para TI - Da Derivada ao Acúmulo** (PDF de Aula)
+8. **Capítulo 14: Algoritmo Backpropagation Parte 1 - Grafos Computacionais e Chain Rule** (Página da Web - Deep Learning Book)
+9. **Engenharia de Computação - Disciplina: Cálculo Diferencial e Integral I** (PDF - Faculdade Engenheiro Salvador Arena)
+10. **Guia de Estudos em Limites, Derivadas e Integrais** (PDF de Apoio)
+11. **Matemática Discreta para Computação e Informática** (Livro/PDF - Paulo Blauth Menezes)
+12. **Números Fuzzy em Processamento de Imagens Digitais e Suas Aplicações na Detecção de Bordas** (Tese/PDF - USP)
+13. **Tabela de Derivadas e Integrais** (PDF de Consulta Rápida)
 
 ---
 
 ## 🛠️ Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
 
-Esta seção documenta o processo de refinamento das perguntas feitas ao NotebookLM para extrair explicações didáticas e evitar respostas puramente mecânicas ou abstratas demais.
+Esta seção documenta as iterações e o refinamento lógico utilizados no NotebookLM para traduzir a matemática pura em conceitos computacionais legíveis.
 
-### Prompt Teste 1 (Abordagem Direta/Superficial)
-* **Prompt:** *"Como faz uma integral?"*
-* **Resultado:** A IA trouxe apenas regras de integração isoladas (como a regra da potência) sem explicar o conceito visual ou o motivo matemático por trás da constante de integração ($C$).
-* **Cicatrização/Refinamento:** O prompt foi reestruturado para exigir uma explicação conceitual antes da aplicação de fórmulas.
+### Prompt Teste 1 (Abordagem Direta/Fórmula Isolada)
+* **Prompt:** *"O que é a regra da cadeia?"*
+* **Resultado:** A IA explicou a fórmula matemática puramente teórica ($f(g(x))'$), o que ajuda na álgebra, mas não contextualiza sua importância para quem estuda tecnologia.
+* **Cicatrização/Refinamento:** O prompt foi modificado para cruzar a teoria matemática com a aplicação de Inteligência Artificial presente nas fontes.
 
-### Prompt Teste 2 (Abordagem Pedagógica e Contextualizada - Sucesso)
-* **Prompt:** *"Com base nos materiais de Cálculo fornecidos, explique a interpretação geométrica de uma integral definida como a soma de Riemann. Use uma analogia simples e descreva passo a passo por que dividimos a área sob a curva em retângulos infinitamente pequenos."*
-* **Resultado:** A resposta foi excelente. A IA utilizou a analogia de fatiar um pão para medir seu volume total e explicou o conceito de limite quando a base do retângulo tende a zero ($dx$).
+### Prompt Teste 2 (Abordagem Interdisciplinar Avançada - Sucesso)
+* **Prompt:** *"Com base nos materiais fornecidos sobre Deep Learning e Cálculo, explique como a Regra da Cadeia (Chain Rule) é aplicada em grafos computacionais durante a execução do algoritmo Backpropagation. Como o cálculo de derivadas parciais ajuda a rede a aprender?"*
+* **Resultado:** Resposta fantástica. O NotebookLM utilizou o material do *Deep Learning Book* para demonstrar como o erro da rede retropropaga pelas camadas, calculando o gradiente de variação dos pesos usando a regra da cadeia de forma encadeada.
 
 ---
 
@@ -38,26 +48,26 @@ Esta seção documenta o processo de refinamento das perguntas feitas ao Noteboo
 
 ### 1. Resumo Estruturado do Assunto
 
-* **O que é a Derivada?** Graficamente, a derivada de uma função em um ponto é a inclinação da reta tangente a esse ponto. Fisicamente, ela representa uma **taxa de variação instantânea** (como a velocidade instantânea de um objeto em um determinado segundo).
-* **O que é a Integral?** Geometricamente, a integral definida representa a **área sob a curva** de uma função em um gráfico. Ela funciona como um operador de acúmulo (a partir da velocidade, podemos integrar para descobrir a distância total percorrida).
-* **O Teorema Fundamental do Cálculo:** É a ponte que une os dois mundos. Ele prova que a diferenciação e a integração são operações inversas. Se você integrar uma função e depois derivar o resultado, você volta para a função original.
+* **A Derivada como Taxa de Variação e Aprendizado de IA:** No cálculo tradicional, a derivada mede a inclinação de uma curva. Na Computação Gráfica e em Inteligência Artificial, essa "inclinação" se transforma no conceito de *Gradiente*. O algoritmo *Backpropagation* utiliza derivadas sucessivas para entender como uma pequena mudança nos pesos neurais afeta o erro total do sistema, permitindo que a IA se ajuste e "aprenda".
+* **A Integral como Acúmulo e Processamento Digital:** Do ponto de vista conceitual (como visto em *Integrais para TI: Da Derivada ao Acúmulo*), a integral calcula o total acumulado de um fluxo contínuo. Isso é essencial em simulações computacionais e no processamento de sinais, onde você precisa somar infinitas variações discretas para analisar dados contínuos.
+* **Processamento de Imagens e Detecção de Bordas:** A variação de intensidade dos pixels de uma imagem digital pode ser mapeada por funções matemáticas. Aplicando conceitos de derivadas (junto à lógica de *Números Fuzzy*), algoritmos conseguem detectar variações bruscas de cor e luz, localizando com precisão as "bordas" de objetos em visão computacional.
 
 ### 2. Glossário de Conceitos-Chave
 
-* **Taxa de Variação:** A velocidade com que uma variável muda em relação a outra.
-* **Reta Tangente:** Uma reta que toca uma curva em apenas um ponto local, representando a direção da curva naquele instante.
-* **Soma de Riemann:** Um método para aproximar a área sob uma curva somando as áreas de múltiplos retângulos sob o gráfico.
-* **Integral Indefinida (Antiderivada):** O processo de encontrar a função original que gerou a derivada, incluindo sempre a constante de integração $+ C$.
-* **Diferencial ($dx$):** Representa uma mudança infinitamente pequena na variável independente $x$.
+* **Regra da Cadeia (Chain Rule):** Técnica matemática para calcular a derivada de funções compostas. Fundamental para o cálculo de gradientes em redes neurais multicamadas.
+* **Backpropagation:** Algoritmo de retropropagação de erros usado para treinar redes neurais artificiais, fortemente baseado em cálculo diferencial.
+* **Complexidade de Algoritmos:** Análise do crescimento do tempo de execução ou uso de memória de um programa (geralmente descrita pela notação Big O), que se apoia em conceitos de limites matemáticos quando a entrada ($n$) tende ao infinito.
+* **Lógica Fuzzy (Névoa/Difusa):** Abordagem lógica que lida com verdades parciais (valores entre 0 e 1), aplicada junto ao cálculo para tratar incertezas em processamento de imagens digitais.
+* **Teorema Fundamental do Cálculo:** Princípio que garante que a integração e a diferenciação (derivação) são operações inversas, permitindo transitar livremente entre taxas de variação e acúmulos de dados.
 
 ### 3. Prompts Reutilizáveis para Revisões Futuras
 
-Use estes prompts no seu NotebookLM para estudar antes das provas da faculdade:
+Guarde estes prompts no seu NotebookLM para estudar antes das avaliações:
 
-* 🧠 **Prompt para Simplificar Teoremas:**
-  > *"Explicite o Teorema Fundamental do Cálculo de uma forma que um estudante do ensino médio consiga entender, utilizando uma analogia com o velocímetro e o hodômetro de um carro."*
-* ✍️ **Prompt para Passo a Passo de Exercícios:**
-  > *"Identifique no texto fornecido quais são os passos recomendados para resolver uma integral por substituição (U-substitution) e monte um checklist mental para eu usar durante a resolução de problemas."*
+* 👁️ **Prompt para Visão Computacional:**
+  > *"Utilizando como referência a tese da USP sobre Números Fuzzy e Processamento de Imagens, resuma em formato de tópicos como o conceito de derivada é traduzido computacionalmente para realizar a detecção de bordas em uma matriz de pixels."*
+* 💻 **Prompt para Análise de Algoritmos:**
+  > *"Explique a relação entre o conceito matemático de Limites (visto nas apostilas de Cálculo) e o cálculo de limites assintóticos na Análise de Complexidade de Algoritmos (Notação Big O) fornecida pelo material do CIn UFPE."*
 
 ---
 ✨ *Projeto desenvolvido com fins educacionais para o portfólio do GitHub e plataforma DIO.*
