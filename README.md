@@ -68,6 +68,10 @@ Guarde estes prompts no seu NotebookLM para estudar antes das avaliações:
   > *"Utilizando como referência a tese da USP sobre Números Fuzzy e Processamento de Imagens, resuma em formato de tópicos como o conceito de derivada é traduzido computacionalmente para realizar a detecção de bordas em uma matriz de pixels."*
 * 💻 **Prompt para Análise de Algoritmos:**
   > *"Explique a relação entre o conceito matemático de Limites (visto nas apostilas de Cálculo) e o cálculo de limites assintóticos na Análise de Complexidade de Algoritmos (Notação Big O) fornecida pelo material do CIn UFPE."*
+  >
+  > ## 🔗 Link do Caderno Temático
+Você pode acessar o caderno de estudos interativo criado diretamente no NotebookLM através do link abaixo:
+👉 [Acesse aqui o meu Notebook de Cálculo Aplicado à Computação](https://notebooklm.google.com/notebook/b0d9b189-943b-41b5-a6f4-2e99b1a91e12)
 
 ---
 ✨ *Projeto desenvolvido com fins educacionais para o portfólio do GitHub e plataforma DIO.*
